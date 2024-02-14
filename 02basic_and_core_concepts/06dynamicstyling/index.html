@@ -21,11 +21,8 @@
       <!-- :class="'demo'" -->
       <!-- :style="borderColor:boxASelected ? 'red' :'#ccc'" -->
       <!-- :class="boxASelected ? 'demo active' : 'demo'" -->
-      <div
-        class="demo"
-        :class="{active: boxASelected}"
-        @click="boxSelected('A')"
-      ></div>
+      <!-- :class="{active: boxASelected}" -->
+      <div class="demo" :class="boxAClasses" @click="boxSelected('A')"></div>
       <div
         class="demo"
         :class="{active: boxBSelected}"
